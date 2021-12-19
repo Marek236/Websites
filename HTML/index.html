@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Marek Hostášek">
@@ -8,230 +8,292 @@
     <title>HTML</title>
   </head>
   <body>
-    <h1>HTML</h1>
+    <!-- <header> is used to differentiate the main header from the rest of the page. -->
+    <header id="header">
+        <h1>HTML</h1>
+    </header>
     <hr>
-    <!-- Lorem Ipsum is a random text generator, that generates random latin text, that makes absolutely no sense. -->
-    <div id="lorem_ipsum">
-        <h2>Lorem Ipsum</h2>
-        <p>Commodo ex veniam aliqua exercitation minim exercitation exercitation quis adipisicing in. Et fugiat elit aute veniam 
-            mollit elit minim elit laboris magna laborum sunt. Aute dolor proident non labore reprehenderit aute. Ex do in est 
-            exercitation ullamco excepteur eiusmod mollit. Deserunt fugiat ad dolor proident consequat aliquip ex. Elit deserunt 
-            aliqua pariatur anim sunt non do nulla sit ad incididunt. Excepteur amet tempor Lorem aute ut. Ex aliqua aliquip labore 
-            sunt enim.</p>
-        <h3>Lorem Ipsum</h3>
-        <p>Exercitation irure minim cillum reprehenderit Lorem commodo dolore nisi tempor sit duis. Et dolor mollit Lorem amet aliqua 
-            excepteur. Reprehenderit eu sint excepteur sunt laborum in anim qui ex id magna consectetur. Et voluptate voluptate 
-            adipisicing anim nisi reprehenderit duis anim. Do esse ullamco tempor ex nisi id enim nostrud occaecat in deserunt anim. 
-            Occaecat qui nulla irure fugiat. Labore anim nulla deserunt eiusmod quis officia aute culpa id elit et id nulla. Eu quis 
-            id deserunt est.</p>
-        <h4>Lorem Ipsum</h4>
-        <p>Est officia non voluptate ipsum incididunt tempor consectetur non esse. Proident duis commodo proident dolore ut irure do 
-            veniam nisi magna proident velit elit. Aliquip reprehenderit minim occaecat tempor in proident aute ullamco nisi aute eu 
-            officia. Deserunt veniam in et duis aliquip id consequat. Nisi ex sit deserunt ullamco velit ut minim pariatur et laborum. 
-            Esse ipsum ea culpa veniam sit. Eu amet cupidatat pariatur deserunt ea tempor irure enim cupidatat do Lorem. Ea nostrud 
-            commodo consequat cupidatat nostrud cillum proident.</p>
-        <h5>Lorem Ipsum</h5>
-        <p>Duis culpa non nulla excepteur quis eu proident ad Lorem et duis excepteur aliqua officia. Quis anim quis sint elit proident 
-            in enim duis commodo aliqua duis. Duis ipsum laboris incididunt voluptate est culpa esse nulla Lorem id laboris fugiat 
-            eiusmod duis. Velit laboris consequat culpa excepteur. Tempor consectetur ullamco amet quis amet aute et Lorem pariatur. 
-            Enim amet sunt minim ad incididunt tempor do tempor et aute. Exercitation duis consequat culpa culpa elit. Fugiat sunt 
-            occaecat anim aliqua. Esse minim laborum Lorem Lorem cillum adipisicing eu aliqua adipisicing duis.</p>
-        <h6>Lorem Ipsum</h6>
-        <p>Laboris sint do exercitation Lorem ad qui qui eu officia Lorem. Duis amet in nisi velit cupidatat eu. Cupidatat anim 
-            cupidatat laborum laborum aute ad. Deserunt eiusmod commodo minim cillum sit magna qui magna ullamco ut minim tempor 
-            pariatur excepteur. Velit velit tempor ut elit reprehenderit proident ullamco incididunt ad adipisicing consectetur ad 
-            anim proident. Ullamco irure sunt amet nisi duis incididunt elit eu ipsum est sunt nisi. In mollit pariatur consequat 
-            consequat et. Aute sit excepteur aute ex tempor occaecat duis reprehenderit excepteur amet magna esse in.</p>
-    </div>
-    <hr>
-    <div id="break">
-        <p>one, two, three<br>four, five, six...<br><br>monday, tuesday, wednesday...</p>
-    </div>
-    <hr>
-    <div id="options">
-        <p><b>bold</b>, <strong>important</strong>, <i>italic</i>, <em>emphasised</em>, <small>small PP</small>, 
-            H<sub>2</sub>SO<sub>4</sub>, 4<sup>2</sup> = 16, <mark>MARKed</mark>, <span style="color:red;">Blood for the blood god!</span></p>
-    </div>
-    <hr>
-    <div id="unordered_list">
-        <ul>
-            <li>butter</li>
-            <li>milk</li>
-            <li>cheese</li>
-            <li>ham</li>
-        </ul>
-    </div>
-    <hr>
-    <div id="ordered_list">
-        <ol>
-            <li>Go to the supermarket.</li>
-            <li>Wash the dishes.</li>
-            <li>Hoover</li>
-        </ol>
-    </div>
-    <hr>
-    <div id="anchors">
-        <!-- <nav> is used for differentiating between normal text and navigational sections. -->
-        <nav>
+    <!-- <main> is used to differentiate the main part of the page from the main header and footer. -->
+    <main id="main">
+        <!-- An id can be used only once in contrast to a class, which can be used multiple times throughout the code. -->
+        <!-- <section> defines a section of the code, that has one generic meaning, while <div> is used to apply styles to a section 
+            of the code. -->
+        <!-- <article> is a text about a specific topic. It should include a heading and can also include other 
+            things such as an image, a video, etc.. -->
+        <!-- <aside> is used when we want to add something to a text that isn't critical for understanding the main point of the 
+            text (e.g. an interesting fact, something funny, an image, etc.). -->
+        <!-- Lorem Ipsum is a random text generator, which generates random latin text, that makes absolutely no sense. -->
+        <section id="lorem_ipsum">
+            <article>
+                <h2>Lorem Ipsum</h2>
+                <p>Commodo ex veniam aliqua exercitation minim exercitation exercitation quis adipisicing in. Et fugiat elit aute veniam 
+                    mollit elit minim elit laboris magna laborum sunt. Aute dolor proident non labore reprehenderit aute. Ex do in est 
+                    exercitation ullamco excepteur eiusmod mollit. Deserunt fugiat ad dolor proident consequat aliquip ex. Elit deserunt 
+                    aliqua pariatur anim sunt non do nulla sit ad incididunt. Excepteur amet tempor Lorem aute ut. Ex aliqua aliquip 
+                    labore sunt enim.</p>
+            </article>
+            <aside>
+                <p>This was the first article.</p>
+            </aside>
+            <article>
+                <h3>Lorem Ipsum</h3>
+                <p>Exercitation irure minim cillum reprehenderit Lorem commodo dolore nisi tempor sit duis. Et dolor mollit Lorem amet 
+                    aliqua excepteur. Reprehenderit eu sint excepteur sunt laborum in anim qui ex id magna consectetur. Et voluptate 
+                    voluptate adipisicing anim nisi reprehenderit duis anim. Do esse ullamco tempor ex nisi id enim nostrud occaecat in 
+                    deserunt anim. Occaecat qui nulla irure fugiat. Labore anim nulla deserunt eiusmod quis officia aute culpa id elit 
+                    et id nulla. Eu quis id deserunt est.</p>
+            </article>
+            <article>
+                <h4>Lorem Ipsum</h4>
+                <p>Est officia non voluptate ipsum incididunt tempor consectetur non esse. Proident duis commodo proident dolore ut 
+                    irure do veniam nisi magna proident velit elit. Aliquip reprehenderit minim occaecat tempor in proident aute 
+                    ullamco nisi aute eu officia. Deserunt veniam in et duis aliquip id consequat. Nisi ex sit deserunt ullamco velit 
+                    ut minim pariatur et laborum. Esse ipsum ea culpa veniam sit. Eu amet cupidatat pariatur deserunt ea tempor irure 
+                    enim cupidatat do Lorem. Ea nostrud commodo consequat cupidatat nostrud cillum proident.</p>
+            </article>
+            <acticle>
+                <h5>Lorem Ipsum</h5>
+                <p>Duis culpa non nulla excepteur quis eu proident ad Lorem et duis excepteur aliqua officia. Quis anim quis sint elit 
+                    proident in enim duis commodo aliqua duis. Duis ipsum laboris incididunt voluptate est culpa esse nulla Lorem id 
+                    laboris fugiat eiusmod duis. Velit laboris consequat culpa excepteur. Tempor consectetur ullamco amet quis amet aute 
+                    et Lorem pariatur. Enim amet sunt minim ad incididunt tempor do tempor et aute. Exercitation duis consequat culpa 
+                    culpa elit. Fugiat sunt occaecat anim aliqua. Esse minim laborum Lorem Lorem cillum adipisicing eu aliqua 
+                    adipisicing duis.</p>
+            </acticle>
+            <acticle>
+                <h6>Lorem Ipsum</h6>
+                <p>Laboris sint do exercitation Lorem ad qui qui eu officia Lorem. Duis amet in nisi velit cupidatat eu. Cupidatat anim 
+                    cupidatat laborum laborum aute ad. Deserunt eiusmod commodo minim cillum sit magna qui magna ullamco ut minim tempor 
+                    pariatur excepteur. Velit velit tempor ut elit reprehenderit proident ullamco incididunt ad adipisicing consectetur 
+                    ad anim proident. Ullamco irure sunt amet nisi duis incididunt elit eu ipsum est sunt nisi. In mollit pariatur 
+                    consequat consequat et. Aute sit excepteur aute ex tempor occaecat duis reprehenderit excepteur amet magna esse 
+                    in.</p>
+            </acticle>
+        </section>
+        <hr>
+        <section id="break">
+            <p>one, two, three<br>four, five, six...<br><br>monday, tuesday, wednesday...</p>
+        </section>
+        <hr>
+        <!-- <span> is similar to <p>, but is used to have text on a single row, eventhough it is spread across multiple <span>s. 
+            It is also used to apply a style to a part of a text. -->
+        <section id="gadgets">
+            <p><b>bold</b>, <strong>important</strong>, <i>italic</i>, <em>emphasised</em>, <small>small PP</small>, 
+                H<sub>2</sub>SO<sub>4</sub>, 4<sup>2</sup> = 16, <mark>MARKed</mark>, 
+                <span style="background-color:black ;color:white;">Blood for the blood god!</span></p>
+        </section>
+        <hr>
+        <div class="lists">
+            <section id="unordered_list">
+                <ul>
+                    <li>butter</li>
+                    <li>milk</li>
+                    <li>cheese</li>
+                    <li>ham</li>
+                </ul>
+            </section>
+            <hr>
+            <section id="ordered_list">
+                <ol>
+                    <li>Go to the supermarket.</li>
+                    <li>Wash the dishes.</li>
+                    <li>Hoover</li>
+                </ol>
+            </section>
+        </div>
+        <hr>
+        <!-- <nav> is used to differentiate between normal text and navigational sections. It's usually used on the top of the 
+            page (inside of <header>), for the main navigation across all of the pages. -->
+        <nav id="nav">
             <a href="#lorem_ipsum">back</a>, <a href="./index.html" target="_blank">more</a>, 
             <a href="https://cs.wikipedia.org/wiki/Hypertext_Markup_Language">what?</a>
         </nav>
-    </div>
-    <hr>
-    <div id="table">
-        <table border="1">
-            <caption>Timetable</caption>
-            <thead>
-                <tr>
-                    <th scope="col" rowspan="2">City</th>
-                    <th scope="col" colspan="2">Time</th>
-                </tr>
-                <tr>
-                    <th scope="col" >Arrival</th>
-                    <th scope="col" >Departure</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Praha</td>
-                    <td align="center">13.05</td>
-                    <td align="center">13:15</td>
-                </tr>
-                <tr>
-                    <td>Plzeň</td>
-                    <td align="center">13:30</td>
-                    <td align="center">13:55</td>
-                </tr>
-                <tr>
-                    <td>Rokycany</td>
-                    <td align="center">15:00</td>
-                    <td align="center">15:01</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th scope="row">Delay</th>
-                    <td colspan="2">Train to Praha - 10 minutes</td>
-                </tr>
-            </tfoot>
-        </table>
-    </div>
-    <hr>
-    <div id="image">
+        <hr>
+        <section id="table">
+            <table border="1">
+                <caption>Timetable</caption>
+                <thead>
+                    <tr>
+                        <!-- <scope> is used to describe whether a <th> applies to a row or a column. -->
+                        <th scope="col" rowspan="2">City</th>
+                        <th scope="col" colspan="2">Time</th>
+                    </tr>
+                    <tr>
+                        <th scope="col" >Arrival</th>
+                        <th scope="col" >Departure</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Praha</td>
+                        <td align="center">13.05</td>
+                        <td align="center">13:15</td>
+                    </tr>
+                    <tr>
+                        <td>Plzeň</td>
+                        <td align="center">13:30</td>
+                        <td align="center">13:55</td>
+                    </tr>
+                    <tr>
+                        <td>Rokycany</td>
+                        <td align="center">15:00</td>
+                        <td align="center">15:01</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Delay</th>
+                        <td colspan="2">Train to Praha - 10 minutes</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
         <br>
-        <a href="https://cs.wikipedia.org/wiki/Hypertext_Markup_Language"><img src="./html_logo.png" alt="HTML5 logo" 
-            width="150" height="150"/></a>
+        <hr>
         <br>
-    </div>
-    <hr>
-    <div id="video">
+        <!-- We use <figure> for files, that we can move all over the page and it won't change anything. But we dom't use <figure>
+            for files, that are a part of something and moving them would matter. -->
+        <!-- We use <embed> for files with an extension, that isn't supported otherwise. -->
+        <figure>
+            <embed src="cute.gif"/>
+            <figcaption>cute cat gif</figcaption>
+        </figure>
         <br>
-        <video src="./avengers_endgame_trailer.mp4" width="350" height="150" controls>Video is not available</video>
+        <hr>
         <br>
-    </div>
+        <figure>
+            <a href="https://cs.wikipedia.org/wiki/Hypertext_Markup_Language"><img src="./html_logo.png" alt="HTML5 logo" width="150" 
+                height="150"/></a>
+            <figcaption>HTML5 logo</figcaption>
+        </figure>
+        <br>
+        <hr>
+        <br>
+        <figure>
+            <!-- <type> is used to describe the type of the file. -->
+            <video src="./avengers_endgame_trailer.mp4" width="350" height="150" type=video/mp4 controls>Can't play this video</video>
+            <figcaption>Marvel Studios' Avengers: Endgame | “To the End”</figcaption>
+        </figure>
+        <br>
+        <hr>
+        <br>
+        <figure>
+            <audio src="./funny_song.mp3" type=audio/mp3 controls>Can't play this audio</audio>
+            <figcaption>Tobi band - Ona ľúbi pomaranče</figcaption>
+        </figure>
+        <!-- We can also use muted, autoplay and loop inside of the <audio> and <video> tag. -->
+        <br>
+        <hr>
+        <br>
+        <section id="form">
+            <form action="./submition.html" method="POST">
+                <section id="username">
+                    <label for="username">Username: </label>
+                    <!-- The title pops up, when a user breaks the pattern. -->
+                    <input type="text" id="username" name="username" minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+" title="A-Z, a-z, 0-9" required>
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section id="password">
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" minlength="8" maxlength="30" required>
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section id="salary">
+                    <label for="salary">How big is your salary?</label>
+                    <br>
+                    <br>
+                    <span>Low</span>
+                    <input type="range" id="salary" name="salary" step="1" min="0" max="5">
+                    <span>High</span>
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section id="money_amount">
+                    <label for="money">How much money do you make a month (€)? </label>
+                    <input type="number" id="money" name="money" step="100" min="0">
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section id="status">
+                    <span>Are you single?</span>
+                    <br>
+                    <br>
+                    <!-- If the name attribute has one common value (like below), you can choose only one answer. But if it has more 
+                        values, you can choose how many answers you want. -->
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="single" id="yes" value="yes">
+                    <label for="no">No</label>
+                    <input type="radio" name="single" id="no" value="no">
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section id="toppings">
+                <span>What topping would you like?</span>
+                <br>
+                <br>
+                <label for="ketchup">Ketchup</label>
+                <input type="checkbox" id="ketchup" name="ketchup" value="yes">
+                <label for="mustard">Mustard</label>
+                <input type="checkbox" id="mustard" name="mustard" value="yes">
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section id="travel_location">
+                    <label for="travel_location">Where do you want to go?</label>
+                    <!-- The default size is 20. -->
+                    <input type="text" list="cities" id="travel_location" name="travel_location" size="40">
+                    <datalist id="cities">
+                        <option value="New York"></option>
+                        <option value="San Francisco"></option>
+                        <option value="Chicago"></option>
+                        <option value="Los Angeles"></option>
+                        <option value="Las Vegas"></option>
+                    </datalist>
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section id="gender">
+                    <label for="gender">What gender are you?</label>
+                    <select id="gender"> name="gender">
+                        <option value="man">Man</option>
+                        <option value="woman">Woman</option>
+                    </select>
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section id="extra">
+                    <label for="extra">Write something cool!</label>
+                    <br>
+                    <br>
+                    <textarea id="extra" name="extra" cols="40" rows="5">
+                    </textarea>
+                </section>
+                <br>
+                <hr>
+                <br>
+                <section id="submit">
+                    <input type="submit" value="Submit">
+                <section>
+                <!-- There are also other input types like date, datetime-local, month, week, time, search, url, tel, email, color, 
+                    button, file, hidden, image and reset -->
+            </form>
+        </section>
+    </main>
     <br>
     <hr>
-    <br>
-    <div>
-        <form action="./submition.html" method="POST">
-            <!-- <section> is almost the same as <div>, but unlike <div> it does not divide the website into parts, it just defines 
-                a section of the code (like below) -->
-			<section class="username">
-				<label for="username">Username: </label>
-				<input type="text" id="username" name="username">
-			</section>
-			<br>
-			<hr>
-			<br>
-			<section class="password">
-				<label for="password">Password: </label>
-				<input type="password" id="password" name="password">
-			</section>
-			<br>
-			<hr>
-			<br>
-			<section class="salary">
-				<label for="salary">How big is your salary?</label>
-				<br>
-				<br>
-				<span>Low</span>
-				<input type="range" id="salary" name="salary" step="1" min="0" max="5">
-				<span>High</span>
-			</section>
-			<br>
-			<hr>
-			<br>
-			<section class="money">
-				<label for="money">How much money do you make a month (€)? </label>
-				<input type="number" id="money" name="money" step="100" min="0">
-			</section>
-			<br>
-			<hr>
-			<br>
-			<section class="status">
-				<span>Are you single?</span>
-				<br>
-				<br>
-				<!-- If the name attribute has one value (like below) you can choose only one answer, 
-                    but if it has more values you can choose how many answers as you want -->
-				<label for="yes">Yes</label>
-				<input type="radio" name="single" id="yes" value="yes">
-				<label for="no">No</label>
-				<input type="radio" name="single" id="no" value="no">
-			</section>
-			<br>
-			<hr>
-			<br>
-			<section class="toppings">
-			<span>What topping would you like?</span>
-			<br>
-			<br>
-			<label for="ketchup">Ketchup</label>
-			<input type="checkbox" id="ketchup" name="ketchup" value="yes">
-			<label for="mustard">Mustard</label>
-			<input type="checkbox" id="mustard" name="mustard" value="yes">
-			</section>
-			<br>
-			<hr>
-			<br>
-			<section class="travel_location">
-				<label for="travel_location">Where do you want to go?</label>
-				<input type="text" list="cities" id="travel_location" name="travel_location">
-				<datalist id="cities">
-					<option value="New York"></option>
-					<option value="San Francisco"></option>
-					<option value="Chicago"></option>
-					<option value="Los Angeles"></option>
-					<option value="Las Vegas"></option>
-				</datalist>
-			</section>
-			<br>
-			<hr>
-			<br>
-			<section class="gender">
-				<label for="gender">What gender are you?</label>
-				<select id="gender"> name="gender">
-					<option value="man">Man</option>
-					<option value="woman">Woman</option>
-				</select>
-			</section>
-			<br>
-			<hr>
-			<br>
-			<section class="extra">
-				<label for="extra">Write something cool!</label>
-				<br>
-				<br>
-				<textarea id="extra" name="extra" cols="40" rows="5">
-				</textarea>
-			</section>
-            <br>
-			<hr>
-			<br>
-			<section class="submit">
-				<input type="submit" value="Submit">
-			<section>
-		</form>
-    </div>
+    <!-- <footer> is used to differentiate the footer from the rest of the page. -->
+    <footer>
+        <p>Contact me at +0 123 456 789</p>
+    </footer>
   </body>
 </html>
