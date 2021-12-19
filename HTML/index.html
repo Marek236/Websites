@@ -189,7 +189,9 @@
             <form action="./submition.html" method="POST">
                 <section id="username">
                     <label for="username">Username: </label>
-                    <!-- The title pops up, when a user breaks the pattern. -->
+                    <!-- title pops up, when a user breaks the pattern. -->
+                    <!-- pattern can look like this: pattern=".{5}@[a-z$]+", which would mean: 5 random symbols, a @ and a random amount of restricted symbols 
+                        (a-z and $ are allowed) -->
                     <input type="text" id="username" name="username" minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+" title="A-Z, a-z, 0-9" required>
                 </section>
                 <br>
