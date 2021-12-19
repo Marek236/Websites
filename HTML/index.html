@@ -155,7 +155,7 @@
             for files, that are a part of something and moving them would matter. -->
         <!-- We use <embed> for files with an extension, that isn't supported otherwise. -->
         <figure>
-            <embed src="cute.gif"/>
+            <embed src="cute_cat.gif"/>
             <figcaption>cute cat gif</figcaption>
         </figure>
         <br>
@@ -227,7 +227,7 @@
                     <!-- If the name attribute has one common value (like below), you can choose only one answer. But if it has more 
                         values, you can choose how many answers you want. -->
                     <label for="yes">Yes</label>
-                    <input type="radio" name="single" id="yes" value="yes">
+                    <input type="radio" name="single" id="yes" value="yes" checked>
                     <label for="no">No</label>
                     <input type="radio" name="single" id="no" value="no">
                 </section>
@@ -281,11 +281,18 @@
                 <br>
                 <hr>
                 <br>
+                <section id="greeting">
+                    <input type="button" onclick="alert('Hi :)')" value="Press Me!">
+                </section>
+                <br>
+                <hr>
+                <br>
                 <section id="submit">
                     <input type="submit" value="Submit">
                 <section>
                 <!-- There are also other input types like date, datetime-local, month, week, time, search, url, tel, email, color, 
-                    button, file, hidden, image and reset -->
+                    file, hidden, image and reset -->
+                <!-- There is also one more restriction, which is readonly. -->
             </form>
         </section>
     </main>
