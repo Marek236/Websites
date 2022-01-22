@@ -1,11 +1,66 @@
+/* an inline selector overwrites anything in a style tag, anything in a style tag overwrites an id, 
+    an id overwrites a class and a class overwrites an elementary tag selector. */
+
 h2 {
-    color: red;
+    color: rgb(71, 190, 77);
 }
 
 .subtitle {
-    color:blue;
+    color: green;
+}
+
+.subtitle:hover {
+    color: black;
 }
 
 #services {
-    color:green;
+    color: rgb(75, 156, 75);
+}
+
+/* a:link {
+    color: rgb(83, 149, 224);
+} */
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+li:only-child {
+    color: grey;
+}
+
+td:first-child {
+    color: rgba(128, 128, 128, 0.863);
+}
+
+td:last-child {
+    color: rgba(128, 128, 128, 0.5);
+}
+
+td:nth-child(2) {
+    color: rgba(128, 128, 128, 0.671);
+}
+
+h2 + a {
+    color: rgb(83, 149, 224);
+}
+
+textarea ~ button {
+    color: grey;
+}
+
+ul > li {
+    color: grey;
+}
+
+/* The difference between a  >  and  nothing,  is that when there is a  >,  it applies for all of the <li>s 
+that FOLLOW RIGHT AFTER an <ul>. In contrast to when there is  nothing,  because that means that it applies to 
+all of the <li>s, that are INSIDE of the <ul> and they DONT'T HAVE TO FOLLOW RIGHT AFTER the <ul>. */
+
+ul li {
+    color: rgb(156, 156, 156)
 }
