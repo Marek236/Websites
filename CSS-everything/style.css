@@ -64,3 +64,9 @@ all of the <li>s, that are INSIDE of the <ul> and they DONT'T HAVE TO FOLLOW RIG
 ul li {
     color: rgb(156, 156, 156)
 }
+
+img[src*="img"] {
+    border: 5px solid black;
+}
+
+/*  *  = contains xxx,  ^  = starts with xxx,  $  = ends with xxx. */
