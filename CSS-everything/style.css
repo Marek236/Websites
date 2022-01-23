@@ -1,72 +1,50 @@
-/* an inline selector overwrites anything in a style tag, anything in a style tag overwrites an id, 
-    an id overwrites a class and a class overwrites an elementary tag selector. */
+/* body {
+    background: url("");
+} */
 
-h2 {
-    color: rgb(71, 190, 77);
+/* Inside of the url function we can use a path to an internal image or a link to an external image. */
+
+body {
+    background: rgb(238, 238, 238);
+}
+
+#title {
+    color: rgba(16, 86, 143, 0.87);
 }
 
 .subtitle {
-    color: green;
+    color:rgba(23, 118, 196, 0.801)
 }
 
-.subtitle:hover {
-    color: black;
-}
-
-#services {
-    color: rgb(75, 156, 75);
-}
-
-/* a:link {
-    color: rgb(83, 149, 224);
+/* #service-image {
+    height: 200px;
+    width: 40%;
+    background-image: url("img-2.jpg");
+    background-color: steelblue;
+    background-repeat: no-repeat;
+    background-size: cover;
 } */
 
-a:visited {
-    color: black;
-}
+/* The difference between background and background-color or background-image is that 
+background can be used for both color and image. */
+/* The default state of background-repeat is repeat. */
+/* In the background-size property there are two values available. contain stretches the 
+image within the image ratio in contrast to cover which stretches the image completely sacrificing some parts of the image. */
 
-a:active {
-    color: black;
-}
+/* #service-image {
+    height: 200px;
+    width: 30%;
+    background: linear-gradient(to top left, rgba(0, 89, 255, 0.829), rgba(167, 0, 209, 0.74));
+} */
 
-li:only-child {
-    color: grey;
-}
+/* We can define the direction of the gradient by predefined names like: 
+top, bottom, left, right, top left, bottom right, ... or by degrees e.g. 180deg. 
+0deg is in the middle at the top. */
 
-td:first-child {
-    color: rgba(128, 128, 128, 0.863);
-}
+#service-image {
+    height: 200px;
+    width: 30%;
+    background: radial-gradient(circle, rgba(255, 251, 0, 0.842) 10%, rgba(212, 122, 4, 0.938) 60%, rgb(0, 0, 0));
+} 
 
-td:last-child {
-    color: rgba(128, 128, 128, 0.5);
-}
-
-td:nth-child(2) {
-    color: rgba(128, 128, 128, 0.671);
-}
-
-h2 + a {
-    color: rgb(83, 149, 224);
-}
-
-textarea ~ button {
-    color: grey;
-}
-
-ul > li {
-    color: grey;
-}
-
-/* The difference between a  >  and  nothing,  is that when there is a  >,  it applies for all of the <li>s 
-that FOLLOW RIGHT AFTER an <ul>. In contrast to when there is  nothing,  because that means that it applies to 
-all of the <li>s, that are INSIDE of the <ul> and they DONT'T HAVE TO FOLLOW RIGHT AFTER the <ul>. */
-
-ul li {
-    color: rgb(156, 156, 156)
-}
-
-img[src*="img"] {
-    border: 5px solid black;
-}
-
-/*  *  = contains xxx,  ^  = starts with xxx,  $  = ends with xxx. */
+/* The percentage has to go from lower to higher. */
