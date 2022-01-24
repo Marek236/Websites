@@ -1,3 +1,24 @@
+/* We use dashes (-) instead of underscores (_) or capitalizing (marekHostasek) */
+/* <div><p></p></div> - in this situation the div tag is a parrent of the p tag and the p tag is a child of the div tag. 
+There are also grandparents and grandchildren. */
+/* Advanced selectors:  h2 + p  - if an h2 is followed by a paragraph, style the paragraph,
+textarea ~ button  - if there is a button and it has the same parent as a textarea, style the button,
+ul > li  - if there is an li and its parent is an ul, style the li and
+ul li  - if there is an li inside of an ul, style the li. 
+Attribute selectors:  a[href="xxx"]  - if there is an a and it has an href value of xxx, style the a,
+a[href*="xxx"]  - if there is an a and its href contains xxx, style the a, 
+a[href^="xxx"]  - if there is an a and its href starts with xxx, style the a and
+a[href$="xxx"]  - if there is an a and its href ends with xxx, style the a. 
+Pseudoselectors: They are used at the end of a selector e.g. elementary-tag:xxx, .class:xxx, #id:xxx, 
+textarea ~ button:xxx or a[href*="xxx"]:xxx.  :hover  ,  :link  - for an  a,
+when a link hasn't yet been visited, apply these styles,  :visited  - for an  a,
+when a link has already been visited, apply these styles,  :active  - for an  a,
+when you click on a link, apply these styles,  :first-child  -
+if the tag is the first child of its parent, apply these styles,
+:last-child  - if the tag is the last child of its parent, apply these styles,
+:nth-child()  - if the tag is the nth child of its parent, apply these styles, 
+:only-child  - if the tag is the only child of its parent, apply these styles*/
+
 /* body {
     background: url("");
 } */
@@ -6,14 +27,28 @@
 
 body {
     background: rgb(238, 238, 238);
+    text-transform: capitalize;
+    text-align: justify;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.05em;
 }
+
+/* justify stretches the text so that every line ends at the end of the page (do bloku) */
+/* serif - patkové (Times New Roman, Georgia), sans-serif - bezpatkové (Arial, Calibri), 
+monospace - all of the letters are of the same size. */
+/* font-family takes the font on the left and if it is available it applies it, but if it isn't, 
+it applies the font to the right of the one, that is not available. If it reaches the end, 
+it looks at the family (serif, sans-serif or monospace) and applies an available font from that family. */
+/* We can also include and use external fonts from google fonts and link them 
+to out html file, above the css link tag. */
 
 #title {
     color: rgba(16, 86, 143, 0.87);
 }
 
 .subtitle {
-    color:rgba(23, 118, 196, 0.801)
+    color:rgba(23, 118, 196, 0.801);
+    font-weight: 400;
 }
 
 /* #service-image {
@@ -27,7 +62,7 @@ body {
 
 /* The difference between background and background-color or background-image is that 
 background can be used for both color and image. */
-/* The default state of background-repeat is repeat. */
+/* The default value of background-repeat is repeat. */
 /* In the background-size property there are two values available. contain stretches the 
 image within the image ratio in contrast to cover which stretches the image completely sacrificing some parts of the image. */
 
@@ -47,4 +82,24 @@ top, bottom, left, right, top left, bottom right, ... or by degrees e.g. 180deg.
     background: radial-gradient(circle, rgba(255, 251, 0, 0.842) 10%, rgba(212, 122, 4, 0.938) 60%, rgb(0, 0, 0));
 } 
 
+/* The default value of the first value inside of the radial-gradient function call is elipse. */
 /* The percentage has to go from lower to higher. */
+
+/* px, pt, pc - pt is a bigger px and a pc is a bigger pt. They are special, 
+because they adjust depending on the device that you are on, 
+e.g. 1px on my PC will be 4px on a high resolution TV. Then there are absolute units like: 
+are mm, cm, in and relative units like: %, em, vw, vh. % stands for a percentage 
+of the width/height of the parent tag, em stands for how many times we want to amplify 
+the size and vw and vh stand for a percentage of the screen dimentions. */
+
+.link {
+    text-decoration: none;
+}
+
+.paragraph {
+    text-indent: 5px;
+}
+
+.italics {
+    font-style: oblique;
+}
