@@ -1,6 +1,11 @@
 /* We use dashes (-) instead of underscores (_) or capitalizing (marekHostasek) */
+
+/* We can use the inspect element to see how the website would look on different devices 
+with the second icon to the right in the top left corner */
+
 /* <div><p></p></div> - in this situation the div tag is a parrent of the p tag and the p tag is a child of the div tag. 
 There are also grandparents and grandchildren. */
+
 /* Advanced selectors:  h2 + p  - if an h2 is followed by a paragraph, style the paragraph,
 textarea ~ button  - if there is a button and it has the same parent as a textarea, style the button,
 ul > li  - if there is an li and its parent is an ul, style the li and
@@ -17,7 +22,7 @@ when you click on a link, apply these styles,  :first-child  -
 if the tag is the first child of its parent, apply these styles,
 :last-child  - if the tag is the last child of its parent, apply these styles,
 :nth-child()  - if the tag is the nth child of its parent, apply these styles, 
-:only-child  - if the tag is the only child of its parent, apply these styles*/
+:only-child  - if the tag is the only child of its parent, apply these styles. */
 
 /* body {
     background: url("");
@@ -30,17 +35,21 @@ body {
     text-transform: capitalize;
     text-align: justify;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 1.05em;
+    font-size: 1.02em;
 }
 
 /* justify stretches the text so that every line ends at the end of the page (do bloku) */
+
 /* serif - patkové (Times New Roman, Georgia), sans-serif - bezpatkové (Arial, Calibri), 
 monospace - all of the letters are of the same size. */
+
 /* font-family takes the font on the left and if it is available it applies it, but if it isn't, 
 it applies the font to the right of the one, that is not available. If it reaches the end, 
 it looks at the family (serif, sans-serif or monospace) and applies an available font from that family. */
+
 /* We can also include and use external fonts from google fonts and link them 
-to out html file, above the css link tag. */
+to out html file, above the css link tag. 
+You can only use those weights and styles of that font, that you chose. */
 
 #title {
     color: rgba(16, 86, 143, 0.87);
@@ -62,9 +71,15 @@ to out html file, above the css link tag. */
 
 /* The difference between background and background-color or background-image is that 
 background can be used for both color and image. */
+
 /* The default value of background-repeat is repeat. */
+
 /* In the background-size property there are two values available. contain stretches the 
-image within the image ratio in contrast to cover which stretches the image completely sacrificing some parts of the image. */
+image within the image ratio in contrast to cover which stretches the image completely, 
+sacrificing some parts of the image. 
+You can also just set the width and the height e.g. 50vw 400px. 
+You can also use the percentage unit, which represents the width and height of the container 
+e.g. 100% 50% - the full width of the container and half of the height of the container. */
 
 /* #service-image {
     height: 200px;
@@ -78,9 +93,17 @@ top, bottom, left, right, top left, bottom right, ... or by degrees e.g. 180deg.
 
 #service-image {
     height: 200px;
-    width: 30%;
+    width: 200px;
     background: radial-gradient(circle, rgba(255, 251, 0, 0.842) 10%, rgba(212, 122, 4, 0.938) 60%, rgb(0, 0, 0));
+    border: 1px solid black;
+    margin: 25px 0;
 } 
+
+#about-us-image {
+    padding: 5px;
+    border: 1px solid black;
+    margin: 30px;
+}
 
 /* The default value of the first value inside of the radial-gradient function call is elipse. */
 /* The percentage has to go from lower to higher. */
@@ -91,6 +114,43 @@ e.g. 1px on my PC will be 4px on a high resolution TV. Then there are absolute u
 are mm, cm, in and relative units like: %, em, vw, vh. % stands for a percentage 
 of the width/height of the parent tag, em stands for how many times we want to amplify 
 the size and vw and vh stand for a percentage of the screen dimentions. */
+
+/* It's important to set the height and more importantly the width, so that the it fits on every device. 
+We use px for height and relative units like vw or % for width. 
+Usually we don't want to set the height and width of an image though. 
+That's because it doesn't look good when it's stretched and also there is no need to do it, 
+because it adjusts it self until it can't without ruining the ratio. We can still set the 
+height and width in px though and it still resizes the image acording to the ratio. */
+
+/* There are 4 border styles: solid, double, dotted, dashed. */
+
+/* There are also these not so much used properties: letter-spacing, word-spacing, 
+line-height - the height between rows of text. */
+
+/* First there is padding - the distance between the content and border, 
+then border a last there is margin - the distance between the border and the rest of the page. 
+We usually set them in px.
+We can use them multiple times e.g. margin-right: 10px margin: 50px margin-left: 70px 
+and they will overwrite themselfs. So the result will be that all of the sides will 
+have a margin of 50px, apart from the left side, which will have a margin of 70px. */
+
+/* padding comes with the background. */
+
+/* There is margin/padding:x, which affects all of the sides then there is 
+margin/padding-top/right/bottom/left, but it can be shorten to margin/padding:
+top right bottom left, again starting from from the middle at the top or to 
+margin/padding: top&bottom right&left. We can also use 0 instead of 0px */
+
+/* There is a float property which moves stuff around and the place,
+where it moves from is filled with the stuff that was below the stuff,
+that got moved e.g. float: none - stays the same/inherit - 
+inherits the float property from its parent/right - moves to the 
+right/left - moves to the left. */
+
+/* The display property has 4 basic values: none - the element disappears,
+inline - the element is not moved to a new line,
+block - the element is moved to a new line and there is some spacing is added to it, 
+inline-block - acts like inline, but adds some spacing to the element. */
 
 .link {
     text-decoration: none;
