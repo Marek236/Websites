@@ -7,16 +7,48 @@ p {
     text-indent:15px;
 }
 
-.basic_info{
-    font-style:italic;
-    font-weight:bold;
+a {
+    text-decoration:solid;
 }
 
-.songs {
+a:active {
+    color: black;
+}
+
+td > a:link {
+    color: black;
+}
+
+td > a:visited {
+    color: black;
+}
+
+#basic-info{
+    font-style:italic;
+    font-weight:bold;
+    width: 250px;
+    height: 200px;
+    text-align: justify;
+    padding: 30px;
+    border: 3px dashed black;
+    margin-right: 15px;
+    float: right;
+}
+
+#songs {
     text-transform:capitalize;
     word-spacing: 5px;
     letter-spacing:1px;
     line-height: 25px;
+}
+
+#box {
+    width: 200px;
+    height: 200px;
+    background: grey;
+    padding: 25px;
+    border: 3px solid black;
+    margin-top: 15px;
 }
 
 ul.lists {
@@ -27,6 +59,50 @@ ol.lists {
     font-family:'Gill Sans MT', sans-serif;
 }
 
-a {
-    text-decoration:solid;
+.b1 {
+    border: 3px none black;
+}
+
+.b2 {
+    border: 3px hidden black;
+}
+
+.b3 {
+    border: 3px dotted black;
+}
+
+.b4 {
+    border: 3px dashed black;
+}
+
+.b5 {
+    border: 3px solid black;
+}
+
+.b6{
+    border: 3px double black;
+}
+
+.b7 {
+    border: 3px groove black;
+}
+
+.b8 {
+    border: 3px ridge black;
+}
+
+.b9 {
+    border: 3px inset black;
+}
+
+.b10 {
+    border: 3px outset black;
+}
+
+.menu {
+    border-radius: 5px;
+}
+
+.menu:hover {
+    background: rgba(40, 104, 40, 0.795);
 }
