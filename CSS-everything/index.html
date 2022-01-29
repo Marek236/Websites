@@ -68,6 +68,34 @@
 
         <div id="service-image"></div>
 
+        <!-- <div class="container">
+            <div class="container-item" style="order: 4; flex-grow: 1;flex-shrink: 3;flex-basis: 100px;">A</div>
+            <div class="container-item" style="order: 3; flex-grow: 3;flex-basis: 100px;">B</div>
+            <div class="container-item" style="order: 5; flex-grow: 0;flex-shrink: 4;flex-basis: 100px;">C</div>
+            <div class="container-item" style="order: 1; flex-grow: 0;flex-shrink: 4;flex-basis: 100px;">D</div>
+            <div class="container-item" style="order: 2; flex-grow: 1;flex-shrink: 3;flex-basis: 100px;">E</div>
+        </div> -->
+
+        <!-- flex-basis sets the default width of the elements, flex-grow sets how much space will every element take. 
+            It also has to be specified in all of the elements, otherwise because the default value is 0, the elements 
+            that don't have the flex-grow property, will stay the same size and the elements that have the flex-grow 
+            property, will take the rest of the available space and divide it between themselfs, according to the value of 
+            their flex-grow property. The final one is flex-shrink and this one defines, at which rate will every element shrink. 
+            The default value is 1, so every element will shrink at the same speed, until it reaches the flex-basis width 
+            and then after all of them will, they will continue shrinking at the same speed and we can change that speed for 
+            every individual element. There is also the value of 0 and that ensures, that the element won't shrink at all. -->
+
+        <!-- We can also use a shortcut for all of these properties, which is called flex and it accepts the values of 
+            flex-grow, flex-shrink and flex-basis e.g. flex: flex-grow flex-shrink flex-basis; -->
+
+        <div class="container">
+            <div class="container-item" style="order: 4;">A</div>
+            <div class="container-item" style="order: 3; align-self: flex-end;">B</div>
+            <div class="container-item" style="order: 5; align-self: flex-start;">C</div>
+            <div class="container-item" style="order: 1; align-self: flex-start;">D</div>
+            <div class="container-item" style="order: 2;">E</div>
+        </div>
+
         <h2 class="subtitle">Contact Us</h2>
 
         <form>

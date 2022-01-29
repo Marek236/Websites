@@ -1,7 +1,14 @@
 /* We use dashes (-) instead of underscores (_) or capitalizing (marekHostasek) */
 
+/* We can hold the left alt and click wherever we want, so that we can type at multiple places at the same time. */
+
 /* We can use the inspect element to see how the website would look on different devices 
 with the second icon to the right in the top left corner */
+
+/* We also use an id when we have multiple elements of the same class e.g. 
+we have 3 uls with the class lists and we want to apply some special styles
+ to one of them, we can use the id tag on the element, 
+ that we want to apply the special styling to. */
 
 /* <div><p></p></div> - in this situation the div tag is a parrent of the p tag and the p tag is a child of the div tag. 
 There are also grandparents and grandchildren. */
@@ -22,7 +29,10 @@ when you click on a link, apply these styles,  :first-child  -
 if the tag is the first child of its parent, apply these styles,
 :last-child  - if the tag is the last child of its parent, apply these styles,
 :nth-child()  - if the tag is the nth child of its parent, apply these styles, 
-:only-child  - if the tag is the only child of its parent, apply these styles. */
+:only-child  - if the tag is the only child of its parent, apply these styles. 
+And when you have one class for multiple elements, there is a way to differenciate 
+between them e.g. there is a class lists which applies for an ul and a ol. 
+We can select the ul by saying ul.lists and ol by saying ol.lists.*/
 
 /* body {
     background: url("");
@@ -95,7 +105,6 @@ top, bottom, left, right, top left, bottom right, ... or by degrees e.g. 180deg.
     height: 200px;
     width: 200px;
     background: radial-gradient(circle, rgba(255, 251, 0, 0.842) 10%, rgba(212, 122, 4, 0.938) 60%, rgb(0, 0, 0));
-    border: 1px solid black;
     margin: 25px 0;
 } 
 
@@ -122,8 +131,6 @@ That's because it doesn't look good when it's stretched and also there is no nee
 because it adjusts it self until it can't without ruining the ratio. We can still set the 
 height and width in px though and it still resizes the image acording to the ratio. */
 
-/* There are 4 border styles: solid, double, dotted, dashed. */
-
 /* There are also these not so much used properties: letter-spacing, word-spacing, 
 line-height - the height between rows of text. */
 
@@ -133,6 +140,8 @@ We usually set them in px.
 We can use them multiple times e.g. margin-right: 10px margin: 50px margin-left: 70px 
 and they will overwrite themselfs. So the result will be that all of the sides will 
 have a margin of 50px, apart from the left side, which will have a margin of 70px. */
+
+/* There are 4 border styles: solid, double, dotted, dashed. We can also round the border with the border-radius property. */
 
 /* padding comes with the background. */
 
@@ -147,10 +156,10 @@ that got moved e.g. float: none - stays the same/inherit -
 inherits the float property from its parent/right - moves to the 
 right/left - moves to the left. */
 
-/* The display property has 4 basic values: none - the element disappears,
+/* The display property has 4 basic values and 2 advanced values: none - the element disappears,
 inline - the element is not moved to a new line,
 block - the element is moved to a new line and there is some spacing is added to it, 
-inline-block - acts like inline, but adds some spacing to the element. */
+inline-block - acts like inline, but adds some spacing to the element, flex and grid. */
 
 .link {
     text-decoration: none;
@@ -163,3 +172,30 @@ inline-block - acts like inline, but adds some spacing to the element. */
 .italics {
     font-style: oblique;
 }
+
+.container {
+    height: 300px;
+    background: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.container-item {
+    width: 200px;
+    background: grey;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+}
+
+/* We use line-height instead of height in this case, because text-align only affects the x axis 
+and we want to center the characters along the y axis as well and if we increase the overall height, 
+it doesn't help the case so we increse the height on the top and the bottom with the line-height property. */
+
+/* flex-wrap makes sure, that when the elements exceed the width of the page, they won't be adjusted 
+(spacing, etc.), but that they will be moved to a new line.
