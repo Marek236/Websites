@@ -165,6 +165,14 @@ inline-block - acts like inline, but adds some spacing to the element, flex and 
     text-decoration: none;
 }
 
+.link:hover {
+    color: black;
+}
+
+.link:active {
+    color: black;
+}
+
 .paragraph {
     text-indent: 5px;
 }
@@ -173,19 +181,40 @@ inline-block - acts like inline, but adds some spacing to the element, flex and 
     font-style: oblique;
 }
 
-.container {
+.flexbox {
     height: 300px;
-    background: rgb(238, 238, 238);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 100px 0;
+    margin: 100px 0 200px 0;
 }
 
-.container-item {
+.flexbox-item {
     width: 200px;
     background: grey;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.grid {
+    height: 350px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    /* justify-content: space-between;
+    align-content: space-between; */
+    /* grid-row-gap: 50%;
+    grid-column-gap: 25%; */
+    /* There is also a shortcut for the gaps: grid-gap: row column; */
+    margin: 200px 0 100px 0;
+}
+
+.grid-item {
+    width: 70px;
     color: white;
     line-height: 50px;
     text-align: center;
