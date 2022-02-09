@@ -13,7 +13,8 @@ we have 3 uls with the class lists and we want to apply some special styles
 /* <div><p></p></div> - in this situation the div tag is a parrent of the p tag and the p tag is a child of the div tag. 
 There are also grandparents and grandchildren. */
 
-/* Advanced selectors:  h2 + p  - if an h2 is followed by a paragraph, style the paragraph,
+/* Advanced selectors:  h2 + p  - if an h2 is followed by a paragraph and 
+they both have the same parent, style the paragraph,
 textarea ~ button  - if there is a button and it has the same parent as a textarea, style the button,
 ul > li  - if there is an li and its parent is an ul, style the li and
 ul li  - if there is an li inside of an ul, style the li. 
@@ -141,14 +142,15 @@ We can use them multiple times e.g. margin-right: 10px margin: 50px margin-left:
 and they will overwrite themselfs. So the result will be that all of the sides will 
 have a margin of 50px, apart from the left side, which will have a margin of 70px. */
 
-/* There are 4 border styles: solid, double, dotted, dashed. We can also round the border with the border-radius property. */
-
 /* padding comes with the background. */
 
-/* There is margin/padding:x, which affects all of the sides then there is 
-margin/padding-top/right/bottom/left, but it can be shorten to margin/padding:
+/* There are 4 border styles: solid, double, dotted, dashed. We can also round the border with the border-radius property. */
+
+/* There is margin/padding/border:x, which affects all of the sides then there is 
+margin/padding/border-top/right/bottom/left, but it can be shorten to margin/padding/border:
 top right bottom left, again starting from from the middle at the top or to 
-margin/padding: top&bottom right&left. We can also use 0 instead of 0px */
+margin/padding/border: top&bottom right&left or to margin/padding/border: top right&left bottom. 
+We can also use 0 instead of 0px. */
 
 /* There is a float property which moves stuff around and the place,
 where it moves from is filled with the stuff that was below the stuff,
@@ -190,6 +192,8 @@ inline-block - acts like inline, but adds some spacing to the element, flex and 
     margin: 100px 0 200px 0;
 }
 
+/* We can use a shortcut to specify flex-direction and flex-wrap in one by saying flex-flow: flex-direction flex-wrap; */
+
 .flexbox-item {
     width: 200px;
     background: grey;
@@ -224,7 +228,24 @@ inline-block - acts like inline, but adds some spacing to the element, flex and 
 
 /* We use line-height instead of height in this case, because text-align only affects the x axis 
 and we want to center the characters along the y axis as well and if we increase the overall height, 
-it doesn't help the case so we increse the height on the top and the bottom with the line-height property. */
+it doesn't help the case so we increse the height on the top and the bottom with the line-height property. 
+By specifying the height we also make the item not responsive, but by specifying the line-height we don't. */
 
 /* flex-wrap makes sure, that when the elements exceed the width of the page, they won't be adjusted 
 (spacing, etc.), but that they will be moved to a new line.
+
+/* The position property has 5 values: static, relative, absolute, fixed, sticky. static - the default value, 
+we can't move the element around using the  left  right  top  bottom  properties,
+relative - we can move the element around using the  left  right  top  bottom  properties, 
+but the space of the element stays in the default location (before moving) of the element, absolute - 
+we can move the element around using the  left  right  top  bottom  properties and the space of the element disappears,
+fixed - we can move the element around using the  left  right  top  bottom  properties and the element 
+will stay in the same place, even when scrolling e.g. ads, sticky - it will stick to the place of the page, that we specify, 
+when we scroll passed it. We can specify the  top  or  bottom  or both gaps for it to work 
+e.g. top: 0; or bottom: 0; or top: 50px; or bottom: 50px; or top: 50vh; and bottom: 30vh;. */
+
+/* There is a shorthand for  top  right  bottom  left  - inset: top right bottom left; 
+or inset: all; or inset: top&bottom right&left or inset: top right&left bottom. */
+
+/* The box-sizing property says, if the specified width and height should include the padding and the border of an element. 
+If we want to include them we set the value to border-box and if we don't we set the value to content-box. */
