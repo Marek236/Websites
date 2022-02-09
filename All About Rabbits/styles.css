@@ -51,6 +51,36 @@ td > a:visited {
     margin-top: 15px;
 }
 
+#header {
+    width: 100vw;
+    height: 10vh;
+    background: rgba(44, 122, 44, 0.849);
+}
+
+#main {
+    width: 100vw;
+    background: grey;
+    display: flex;
+}
+
+#nav {
+    width: 20vw;
+    height: 500px;
+    background: rgb(92, 92, 92);
+}
+
+#text {
+    width: 60vw;
+    margin: 10px 10vw;
+    text-align: justify;
+}
+
+#footer {
+    width: 100vw;
+    height: 10vh;
+    background: rgba(44, 122, 44, 0.849);
+}
+
 ul.lists {
     font-family:Verdana, sans-serif;
 }
