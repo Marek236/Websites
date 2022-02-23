@@ -106,7 +106,7 @@ top, bottom, left, right, top left, bottom right, ... or by degrees e.g. 180deg.
     height: 200px;
     width: 200px;
     background: radial-gradient(circle, rgba(255, 251, 0, 0.842) 10%, rgba(212, 122, 4, 0.938) 60%, rgb(0, 0, 0));
-    margin: 25px 0;
+    margin: 25px 10px;
 } 
 
 #about-us-image {
@@ -130,7 +130,8 @@ We use px for height and relative units like vw or % for width.
 Usually we don't want to set the height and width of an image though. 
 That's because it doesn't look good when it's stretched and also there is no need to do it, 
 because it adjusts it self until it can't without ruining the ratio. We can still set the 
-height and width in px though and it still resizes the image acording to the ratio. */
+height and width in px though and it still resizes the image acording to the ratio. 
+There are also the min-height, max-height, min-width and max-width properties. */
 
 /* There are also these not so much used properties: letter-spacing, word-spacing, 
 line-height - the height between rows of text. */
@@ -144,7 +145,8 @@ have a margin of 50px, apart from the left side, which will have a margin of 70p
 
 /* padding comes with the background. */
 
-/* There are 4 border styles: solid, double, dotted, dashed. We can also round the border with the border-radius property. */
+/* There are 4 border styles: solid, double, dotted, dashed. We can also round the border with the border-radius property and 
+specify the color of the border or of the section of the border with the border-color property. */
 
 /* There is margin/padding/border:x, which affects all of the sides then there is 
 margin/padding/border-top/right/bottom/left, but it can be shorten to margin/padding/border:
@@ -187,7 +189,7 @@ inline-block - acts like inline, but adds some spacing to the element, flex and 
     height: 300px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin: 100px 0 200px 0;
 }
@@ -240,12 +242,55 @@ relative - we can move the element around using the  left  right  top  bottom  p
 but the space of the element stays in the default location (before moving) of the element, absolute - 
 we can move the element around using the  left  right  top  bottom  properties and the space of the element disappears,
 fixed - we can move the element around using the  left  right  top  bottom  properties and the element 
-will stay in the same place, even when scrolling e.g. ads, sticky - it will stick to the place of the page, that we specify, 
-when we scroll passed it. We can specify the  top  or  bottom  or both gaps for it to work 
-e.g. top: 0; or bottom: 0; or top: 50px; or bottom: 50px; or top: 50vh; and bottom: 30vh;. */
+will stay in the same place, even when scrolling e.g. ads, it is also absolute, sticky - it will stick 
+to the place of the page, that we specify, when we scroll passed it. We can specify the  top  or  bottom  or 
+both gaps for it to work e.g. top: 0; or bottom: 0; or top: 50px; or bottom: 50px; or top: 50vh; and bottom: 30vh;, 
+it is also relative. */
 
 /* There is a shorthand for  top  right  bottom  left  - inset: top right bottom left; 
 or inset: all; or inset: top&bottom right&left or inset: top right&left bottom. */
 
 /* The box-sizing property says, if the specified width and height should include the padding and the border of an element. 
 If we want to include them we set the value to border-box and if we don't we set the value to content-box. */
+
+/* The overflow property specifies what to do, when the text on your website overflows the specified area. It has 4 values: 
+visible, hidden, scroll, auto - same as scroll, but adds scroll bars only when necessary. There is also the overflow-x and overflow-y property. */
+
+.submit-button {
+    background: rgba(102, 147, 226, 0.801);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    transition: background 250ms ease-in-out;
+    -ms-transition: background 250ms ease-in-out;
+    -webkit-transition: background 250ms ease-in-out;
+    -moz-transition: background 250ms ease-in-out;
+    -o-transition: background 250ms ease-in-out;
+}
+
+.submit-button:hover {
+    background: rgba(95, 122, 170, 0.801);
+}
+
+/* The transition property affects all of the pseudo-selectors with the same class / id / ... . 
+It accepts 4 values: what - the property, that we want to apply the transition to e.g. all, background, ..., 
+the next value is the duration of the transition in s or ms, then the type of the transition - 
+linear - same speed, ease - slower in the middle, but not at the start nor at the end, 
+ease-in - slower at the start, ease-out - slower at the end, 
+ease-in-out - slower at the start and at the end, but not in the middle. 
+And the last value is the delay before the transition starts in s or ms. 
+Although there is a catch, because older browsers don't support the transition property, so we have to specify a prefix for them. 
+For Microsoft Edge and Internet Explorer it's -ms-, for Google Chrome,  Safari, Android and iOS it's -webkit-, 
+for Mozilla Firefox it's -moz- and for Opera it's -o-. */
+
+/* The transform property accepts 10 functions. translate(x, y) / translateX(x) / translateY(y) - 
+moves the object around by e.g. 50px, -80px - 50px to the right and 80px to the bottom. scale(x&y), scaleX(x), scaleY(y) - 
+scales the objects times ... . skew(x, y), skewX(x), skewY(y) - rotates the object along one of the axis e.g. 45deg. 
+rotate() - rotates the object e.g. -90deg. There is also a shothand - 
+matrix(scaleX - times e.g. 10, skewX - deg e.g. 0.5, skewY - deg e.g. 0.5, scaleY  - times e.g. 10, 
+translateX - px e.g. 40, translateY - px e.g. 40). Although there is a catch, 
+because older browsers don't support the transformation property, so we have to specify a prefix for them. 
+For Microsoft Edge and Internet Explorer it's -ms-, for Google Chrome,  Safari, Android and iOS it's -webkit-, 
+for Mozilla Firefox it's -moz- and for Opera it's -o-. */
