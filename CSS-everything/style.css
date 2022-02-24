@@ -281,7 +281,8 @@ linear - same speed, ease - slower in the middle, but not at the start nor at th
 ease-in - slower at the start, ease-out - slower at the end, 
 ease-in-out - slower at the start and at the end, but not in the middle. 
 And the last value is the delay before the transition starts in s or ms (can also be negative - 
-some time has already passed since the transition started). The transition property is a shorthand for the transition-property, 
+some time has already passed since the transition started and if is 0 - we have to use 0s or 0ms or nothing, not just 0), . 
+The transition property is a shorthand for the transition-property, 
 transition-duration, transition-timing-function and transition-delay properties.
 Although there is a catch, because older browsers don't support the transition property, so we have to specify a prefix for them. 
 For Microsoft Edge and Internet Explorer it's -ms-, for Google Chrome,  Safari, Android and iOS it's -webkit-, 
@@ -293,7 +294,8 @@ scale(x, y), scale(x&y) / scaleX(x) / scaleY(y) - scales the objects times ... .
 skew(x, y) / skew(x&y) / skewX(x) / skewY(y) - rotates the object along one of the axis e.g. 45deg. 
 rotate() - rotates the object e.g. -90deg. There is also a shothand - 
 matrix(scaleX - times e.g. 10, skewX - deg e.g. 0.5, skewY - deg e.g. 0.5, scaleY  - times e.g. 10, 
-translateX - px e.g. 40, translateY - px e.g. 40). Although there is a catch, 
+translateX - px e.g. 40, translateY - px e.g. 40). We can use the transformation property and its functions for 
+transitions / animations e.g. After we hover over an image, we can smoothly scale it. Although there is a catch, 
 because older browsers don't support the transformation property, so we have to specify a prefix for them. 
 For Microsoft Edge and Internet Explorer it's -ms-, for Google Chrome,  Safari, Android and iOS it's -webkit-, 
 for Mozilla Firefox it's -moz- and for Opera it's -o-. */
@@ -313,11 +315,6 @@ for Mozilla Firefox it's -moz- and for Opera it's -o-. */
     -o-animation: white-to-black 1s linear -1s infinite alternate-reverse;
 }
 
-@keyframes white-to-black {
-    from {background: rgb(238, 238, 238);}
-    to {background: black;}
-}
-
 /* @keyframes acts as a function. It has a name e.g. white-to-black and executes the code inside itself, when called. 
 We can call it with the animation property e.g. when we put the animation property inside of a selected class / id / ... 
 without a pseudo-selector, the animation executes, when we visit the page or when we refresh it. We can also asign 
@@ -328,10 +325,12 @@ specify how will the website look at 0% (from) and at 100% (to). */
 
 /* The animation property is very similar to the transition property, but it has a few advantages. 
 It's execution is not dependent on an event e.g. the animation can be executed, 
-when we visit the page or when we refresh and it has more values, that we can input. 
+when we visit the page or when we refresh and it has more values, that we can input as well as more states 
+e.g. not only changing a color to another color, but changing a color to another color, then to another color, ... . 
 It accepts 6 values: the name of the animation, the duration for which the animation will play in s or ms, 
 the type of the animation - same as for transitions, the delay before the animation
-starts in s or ms (can also be negative - some time has already passed since the animation started), 
+starts in s or ms (can also be negative - some time has already passed since 
+the animation started and if is 0 - we have to use 0s or 0ms, not just 0), 
 the iteration count - how many times will the animation play e.g. 5, infinite and the direction of the animation: 
 normal - from start to end, reverse - from end to start, alternate - from start to end and then from end to start 
 (requires the iteration count to be at least 2 to work) and alternate-reverse - from end to start and then from start to end 
@@ -340,3 +339,8 @@ animation-duration, animation-timing-function, animation-delay, animation-iterat
 Although there is a catch, because older browsers don't support the animation property, so we have to specify a prefix for them. 
 For Microsoft Edge and Internet Explorer it's -ms-, for Google Chrome,  Safari, Android and iOS it's -webkit-, 
 for Mozilla Firefox it's -moz- and for Opera it's -o-. */
+
+@keyframes white-to-black {
+    from {background: rgb(238, 238, 238);}
+    to {background: black;}
+}
