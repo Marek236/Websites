@@ -5,10 +5,12 @@
 /* We can use the inspect element to see how the website would look on different devices 
 with the second icon to the right in the top left corner */
 
+/* The element selectors overwrite classes and classes overwrite ids */
+
 /* We also use an id when we have multiple elements of the same class e.g. 
-we have 3 uls with the class lists and we want to apply some special styles
- to one of them, we can use the id tag on the element, 
- that we want to apply the special styling to. */
+we have 3 uls with the class lists and we want to apply some special styles 
+to one of them, we can use the id tag on the element, 
+that we want to apply the special styling to. */
 
 /* <div><p></p></div> - in this situation the div tag is a parrent of the p tag and the p tag is a child of the div tag. 
 There are also grandparents and grandchildren. */
@@ -120,10 +122,12 @@ top, bottom, left, right, top left, bottom right, ... or by degrees e.g. 180deg.
 
 /* px, pt, pc - pt is a bigger px and a pc is a bigger pt. They are special, 
 because they adjust depending on the device that you are on, 
-e.g. 1px on my PC will be 4px on a high resolution TV. Then there are absolute units like: 
-are mm, cm, in and relative units like: %, em, vw, vh. % stands for a percentage 
-of the width/height of the parent tag, em stands for how many times we want to amplify 
-the size and vw and vh stand for a percentage of the screen dimentions. */
+e.g. 1px on my PC will be 4px on a high resolution TV, but there is a catch, until 
+the width reaches 1000px they don't adjust, they just get closer to each other. 
+Then there are absolute units like: mm, cm, in, which don't change and relative units 
+like: %, em, vw, vh. % stands for a percentage of the width/height of the parent tag, 
+em stands for how many times we want to amplify the normal size and vw and vh stand 
+for a percentage of the screen dimensions. */
 
 /* It's important to set the height and more importantly the width, so that the it fits on every device. 
 We use px for height and relative units like vw or % for width. 
@@ -228,13 +232,14 @@ inline-block - acts like inline, but adds some spacing to the element, flex and 
     margin: 10px;
 }
 
+/* flex-wrap makes sure, that when the elements exceed the width of the page, they won't be adjusted 
+(spacing, etc.), but that they will be moved to a new line.
+
 /* We use line-height instead of height in this case, because text-align only affects the x axis 
 and we want to center the characters along the y axis as well and if we increase the overall height, 
 it doesn't help the case so we increse the height on the top and the bottom with the line-height property. 
 By specifying the height we also make the item not responsive, but by specifying the line-height we don't. */
 
-/* flex-wrap makes sure, that when the elements exceed the width of the page, they won't be adjusted 
-(spacing, etc.), but that they will be moved to a new line.
 
 /* The position property has 5 values: static, relative, absolute, fixed, sticky. static - the default value, 
 we can't move the element around using the  left  right  top  bottom  properties,
@@ -255,6 +260,16 @@ If we want to include them we set the value to border-box and if we don't we set
 
 /* The overflow property specifies what to do, when the text on your website overflows the specified area. It has 4 values: 
 visible, hidden, scroll, auto - same as scroll, but adds scroll bars only when necessary. There is also the overflow-x and overflow-y property. */
+
+/* The visibility property has 2 values: visible and hidden. */
+
+/* The opacity property goes from 0 to 1. */
+
+/* The cursor property has many values (https://www.w3schools.com/css/tryit.asp?filename=trycss_cursor) and it changes the cursor, 
+while hovering over the object that its applied to. */
+
+/* The z-index property defines the z axis of an object e.g. one object has z-index: 1, next one has z-index: 5 and the 
+last one has z-index: -1 - The one with z-index: 5 will be above the other ones and so on. The default value is 0 */
 
 .submit-button {
     background: rgba(102, 147, 226, 0.801);
