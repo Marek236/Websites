@@ -123,11 +123,12 @@ top, bottom, left, right, top left, bottom right, ... or by degrees e.g. 180deg.
 /* px, pt, pc - pt is a bigger px and a pc is a bigger pt. They are special, 
 because they adjust depending on the device that you are on, 
 e.g. 1px on my PC will be 4px on a high resolution TV, but there is a catch, until 
-the width reaches 1000px they don't adjust, they just get closer to each other. 
+the width reaches 1000px they don't adjust, the screen just gets narrower and they don't adjust. 
 Then there are absolute units like: mm, cm, in, which don't change and relative units 
-like: %, em, vw, vh. % stands for a percentage of the width/height of the parent tag, 
-em stands for how many times we want to amplify the normal size and vw and vh stand 
-for a percentage of the screen dimensions. */
+like: %, rem, em, vw, vh. % stands for a percentage of the width/height of the parent tag, rem stands 
+for how many times we want to amplify the normal size, that the text would have on the page, 
+em stands for how many times we want to amplify the normal size, that the text would have 
+inside of the container, that it's in and vw and vh stand for a percentage of the screen dimensions. */
 
 /* It's important to set the height and more importantly the width, so that the it fits on every device. 
 We use px for height and relative units like vw or % for width. 
@@ -359,3 +360,11 @@ for Mozilla Firefox it's -moz- and for Opera it's -o-. */
     from {background: rgb(238, 238, 238);}
     to {background: black;}
 }
+
+/* There is also @media (condition - width < 500px) {
+    code - #magical-dot {
+        color: white;
+    }
+} */
+
+/* Works exactly like an if statement. */
