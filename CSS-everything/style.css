@@ -272,6 +272,8 @@ while hovering over the object that its applied to. */
 /* The z-index property defines the z axis of an object e.g. one object has z-index: 1, next one has z-index: 5 and the 
 last one has z-index: -1 - The one with z-index: 5 will be above the other ones and so on. The default value is 0 */
 
+/* inherit is a value, which sets the value of the property to the value of the property of the element's parent element */
+
 .submit-button {
     background: rgba(102, 147, 226, 0.801);
     color: white;
