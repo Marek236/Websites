@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Marek Hostášek, Jan Brančík">
+    <meta name="description" content="Informace o plese konajícím se v Uničově.">
+    <meta name="keywords" content="Uničov, akce, ples, Rádio Haná">
+    <title>Uničovský ples</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body onresize="zoomed()">
+    <header>
+        <a id="title" href="index.html"><img src="logo-ples.svg" alt="logo"></a>
+        <div id="around-contact">
+            <a id="contact" href="contact.html">KONTAKT</a>
+        </div>
+        <img onclick="clicked_menu()" id="hamburger" src="hamburger.svg" />
+        <div id="menu"></div>
+        <img onclick="clicked_cross()" id="cross" src="cross.svg" alt="close" />
+        <a id="index-in-menu" href="index.html">UNIČOVSKÝ PLES</a>
+        <a id="contact-in-menu" href="contact.html">KONTAKT</a>
+    </header>
+    <div id="background-container">
+        <div id="background"></div>
+    </div>
+    <main id="main-index">
+        <p id="explanation">HNED JAK BUDEME VĚDĚT TERMÍN UNIČOVSKÉHO<br>
+        PLESU, TAK VÁM DÁME VĚDĚT.<br>ZATÍM SE PODÍVEJTE NA NAŠE PODOBNÉ AKCE</p>
+        <img id="dancing-pair" src="dancing-pair.svg" alt="Taneční pár" />
+        <div id="references">
+            <a href="https://sumperskyples.cz/">sumperskyples.cz</a><br>
+            <a href="https://olomouckyples.cz/">olomouckyples.cz</a><br>
+            <a href="https://prerovskyples.cz/">prerovskyples.cz</a><br>
+            <a href="https://prostejovskyples.cz/">prostejovskyples.cz</a><br>
+            <a href="https://majovaslavnost.cz/">majovaslavnost.cz</a><br>
+            <a href="https://carodejniceolomouc.cz/">carodejniceolomouc.cz</a>
+        </div>
+        <p id="thanks">DĚKUJEME ZA POCHOPENÍ.</p>
+    </main>
+    <footer id="footer">
+        <p id="invitation-part1">Na Uničovský ples Vás zvou</p>
+        <div id="logos">
+            <a href="https://www.radiohana.cz/"><img src="radio-hana-logo.png" id="logo-radio-hana" alt="Logo Rádia Haná" /></a>
+            <a href="https://www.forsberg.cz/"><img src="forsberg-logo.png" id="logo-forsberg" alt="Logo Forsbergu" /></a>
+        </div>
+        <p id="invitation-part2">© 2022 Uničovský ples.</p>
+    </footer>
+    <script src="script-index.js"></script>
+</body>
+</html>

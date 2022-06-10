@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Zing Rust Demo Base';
+  font-display: block;
+  src: url('../fonts/ZingRust.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

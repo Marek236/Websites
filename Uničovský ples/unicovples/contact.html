@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Marek Hostášek, Jan Brančík">
+    <meta name="description" content="Informace o plese konajícím se v Uničově.">
+    <meta name="keywords" content="Uničov, akce, ples, Rádio Haná">
+    <title>Uničovský ples</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body onresize="zoomed()">
+    <header>
+        <a id="title" href="index.html"><img src="logo-ples.svg" alt="logo"></a>
+        <div id="around-contact">
+            <a id="contact" href="contact.html">KONTAKT</a>
+        </div>
+        <img onclick="clicked_menu()" id="hamburger" src="hamburger.svg" />
+        <div id="menu"></div>
+        <img onclick="clicked_cross()" id="cross" src="cross.svg" alt="close" />
+        <a id="index-in-menu" href="index.html">UNIČOVSKÝ PLES</a>
+        <a id="contact-in-menu" href="contact.html">KONTAKT</a>
+    </header>
+    <main id="main-contact">
+        <h1 id="main-heading">DŮLEŽITÉ KONTAKTY</h1>
+        <p class="red-objects" style="margin: 0 0 15px">Případné dotazy a připomínky pište na:</p>
+        <p style="font-weight: 600">info@forsberg.cz</p>
+        <p class="red-objects">Marek Berger</p>
+        <p>ředitel agentury Forsberg</p>
+        <p class="red-objects">Ing. David Foretník</p>
+        <p id="contact-end">ředitel Radia Haná</p>
+    </main>
+    <footer id="footer">
+        <p id="invitation-part1">Na Uničovský ples Vás zvou</p>
+        <div id="logos">
+            <a href="https://www.radiohana.cz/"><img src="radio-hana-logo.png" id="logo-radio-hana" alt="Logo Rádia Haná" /></a>
+            <a href="https://www.forsberg.cz/"><img src="forsberg-logo.png" id="logo-forsberg" alt="Logo Forsbergu" /></a>
+        </div>
+        <p id="invitation-part2">© 2022 Uničovský ples.</p>
+    </footer>
+    <script src="script-contact.js"></script>
+</body>
+</html>

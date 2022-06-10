@@ -1,0 +1,719 @@
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+
+  header nav ul li a {
+    margin-left: 20px;
+  }
+
+  main.fail-page .content-404 h1 {
+    font-size: 280px;
+    line-height: 220px;
+    letter-spacing: 10px;
+  }
+
+  main.fail-page .content-404 .button {
+    width: 170px;
+    background: black;
+  }
+
+  main.fail-page .content-404 .button:hover {
+    background: #fff;
+    border: 1px solid #fff;
+  }
+
+  .contact-page .title {
+    font-size: 26px;
+  }
+
+  main.another-page h1 {
+    font-size: 40px;
+  }
+
+  .partners .flx-loga a {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .spinner-master * {
+    transition: all 0.3s;
+    box-sizing: border-box;
+  }
+
+  .spinner-master {
+    position: relative;
+    height: 20px;
+    width: 25px;
+    display: block !important;
+    z-index: 31;
+    margin-left: 20px;
+  }
+
+  .spinner-master label {
+    cursor: pointer;
+    position: static;
+    height: 100%;
+    width: 100%;
+  }
+
+  .spinner-master .spinner {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    padding: 0;
+    background: #fff;
+  }
+
+  .spinner-master.open .spinner {
+    background: black;
+  }
+
+  .spinner-master .diagonal.part-1 {
+    position: relative;
+    float: left;
+  }
+
+  .spinner-master .horizontal {
+    position: relative;
+    float: left;
+    margin-top: 4px;
+  }
+
+  .spinner-master .diagonal.part-2 {
+    position: relative;
+    float: left;
+    margin-top: 4px;
+  }
+
+  .spinner-master.open .spinner-spin > .horizontal { opacity: 0; }
+
+  .spinner-master.open .spinner-spin > .diagonal.part-1 {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-top: 8px;
+  }
+
+  .spinner-master.open .spinner-spin > .diagonal.part-2 {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin-top: -10px;
+  }
+
+  main {
+    height: auto;
+  }
+
+  main .bcgwhite, main .bcgblack {
+    display: none;
+  }
+
+  main.another-page .bcgwhite, main.another-page .bcgblack {
+    display: block;
+  }
+
+  main .container {
+    padding-top: 110px;
+    padding-bottom: 50px;
+  }
+
+  main #hero-vid, main .description {
+    /*position: static;*/
+    /*display: inline-block;*/
+    margin: 0 auto;
+  }
+
+  main #hero-vid {
+    background-attachment: inherit;
+    /*width: 100%;*/
+  }
+
+  main #hero-girl {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: transparent url(../img/bannermobile.jpg) no-repeat bottom left;
+    max-width: 100%;
+    max-height: 100%;
+    left: 0;
+    background-size: cover;
+  }
+
+  header {
+    padding: 10px 0;
+  }
+
+  nav {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    background: #fff;
+    z-index: 15;
+    height: 100vh;
+    padding-top: 40px;
+  }
+
+  header nav ul li {
+    width: 100%;
+  }
+
+  header nav ul li a {
+    color: #e30815;
+    padding: 15px;
+    border-bottom: 1px solid #dadada;
+    display: inline-block;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  header nav ul li a.button {
+    width: 90%;
+    text-align: center;
+    color: #e30815;
+    margin-top: 15px;
+    margin-left: 5%;
+  }
+
+  .logo {
+    width: 38%;
+  }
+
+  .interprets .interprets-flx {
+    flex-wrap: wrap;
+  }
+
+  .interprets .interprets-flx article {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+
+  .interprets .interprets-flx article span {
+    width: auto;
+    height: auto;
+  }
+
+  .interprets-flx article.smaller {
+    width: 25%;
+  }
+
+  footer h5 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  footer p {
+    margin-top: 30px;
+  }
+
+  main.fail-page {
+    padding-top: 120px;
+  }
+
+  main.fail-page .content-404 h1, main.fail-page .content-404 p {
+    margin-bottom: 50px;
+  }
+
+  main.fail-page .content-404 h1 {
+    font-size: 210px;
+    line-height: 160px;
+  }
+
+  .contact-page {
+    padding: 50px 0;
+  }
+
+  .contact-page .container {
+    flex-wrap: wrap;
+  }
+
+  .contact-page .asks, .contact-page .peoples {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contact-page .title {
+    height: auto;
+  }
+
+  .contact-page .peoples h3 {
+    margin-top: 20px;
+  }
+
+  .contact-page .asks {
+    margin-top: 40px;
+  }
+
+  main.another-page {
+    height: 200px;
+  }
+
+  main .container {
+    transform: scale(0.7);
+  }
+
+  main.another-page h1 {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 0 30px;
+  }
+
+  main #hero-vid h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  main #hero-vid p.dsc {
+    margin-top: 15px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .timecount p {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .timecount i {
+    font-size: 24px;
+    line-height: 26px;
+    top: -10px;
+  }
+  header nav ul li.active a::before {
+    bottom: -1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .w50p {
+    width: 100%;
+  }
+  main .container, .interprets, .place-and-news {
+    padding: 40px 0;
+  }
+
+  /*main #hero-vid {*/
+  /*  margin: 30px 0;*/
+  /*  padding-left: 30px;*/
+  /*}*/
+
+  main #hero-vid h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  main #hero-vid p.dsc {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  main #hero-vid .odpocet-text {
+    margin-top: 30px;
+  }
+
+  .interprets .title {
+    margin-bottom: 10px;
+  }
+
+  .place-and-news .container {
+    flex-wrap: wrap;
+  }
+
+  .place-and-news .container > div {
+    width: 100%;
+  }
+
+  .partners {
+    padding-bottom: 40px;
+  }
+
+  footer {
+    padding-top: 40px;
+  }
+
+  /*.partners h4 {*/
+  /*  margin-top: 40px;*/
+  /*  margin-bottom: 0;*/
+  /*}*/
+
+  /*.partners .flx-loga a {*/
+  /*  margin-top: 15px;*/
+  /*}*/
+
+  footer p {
+    margin-top: 10px;
+  }
+
+  .place-and-news .container .news {
+    margin-top: 40px;
+  }
+
+  .place-and-news .title {
+    margin-bottom: 30px;
+  }
+
+  main.fail-page .content-404 h1 {
+    font-size: 190px;
+    line-height: 150px;
+    letter-spacing: 0px;
+  }
+
+  main.fail-page .content-404 p {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  main.fail-page {
+    padding-top: 100px;
+  }
+
+  .contact-page .title {
+    font-size: 22px;
+  }
+
+  main.another-page {
+    height: auto;
+  }
+
+  .has-float-label textarea {
+    height: 100px;
+  }
+
+  main #hero-girl {
+    background-position-x: 27%;
+  }
+
+  .vybrany-rocnik .foto {
+    flex-wrap: wrap;
+  }
+
+  .vybrany-rocnik .foto {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*.vybrany-rocnik .foto.mbtrick > div {*/
+  /*  margin-top: 15px;*/
+  /*}*/
+
+  /*.vybrany-rocnik {*/
+  /*  margin-top: 30px;*/
+  /*  margin-bottom: 0;*/
+  /*}*/
+
+  .vybrany-rocnik .button.black {
+    margin-top: 10px;
+  }
+
+  .fotogalerie-detail {
+    padding: 30px 0;
+  }
+
+  #container {
+    margin-top: 30px;
+  }
+
+  #container.fluid .item {
+    width: 50%;
+  }
+
+  main #hero-vid p.poddsc {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 15px;
+  }
+
+  .interprets-flx article.bigger {
+    width: 50%;
+  }
+
+  .interprets-flx article.bigger:nth-child(3) {
+    width: 100%;
+  }
+
+  .interprets-flx article.smaller {
+    width: 33.3333%;
+  }
+  .loga-w70, .loga-w30 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+
+  main #hero-vid h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  main .description .button {
+    width: calc(50% - 20px);
+    margin: 0 5px;
+    padding: 0;
+  }
+
+  header {
+    /*background: #212b55;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*border-bottom: 1px solid #dadada;*/
+  }
+
+  .logo {
+    width: 220px;
+  }
+
+  .spinner-master .spinner {
+    background: #fff;
+  }
+
+  .interprets .interprets-flx article {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .interprets .interprets-flx article:last-child {
+    border-bottom: 0;
+    padding-bottom: 0px;
+  }
+
+  .interprets .interprets-flx article h2 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .place-and-news .title {
+    margin-bottom: 20px;
+  }
+
+  .place h4 {
+    font-size: 18px;
+  }
+
+  main.fail-page .content-404 h1 {
+    font-size: 150px;
+    line-height: 115px;
+  }
+
+  main.fail-page .content-404 p {
+    text-align: center;
+  }
+
+  main.fail-page {
+    padding-top: 80px;
+  }
+
+  .has-float-label.w50 {
+    width: 100%;
+  }
+
+  .contact-page {
+    padding: 30px 0;
+  }
+
+  main #hero-girl {
+    background-position-y: 20px;
+  }
+
+  .vybrany-rocnik .foto {
+    grid-template-columns: 1fr;
+  }
+
+  .vybrany-rocnik .foto .nahled img {
+    height: unset;
+  }
+
+  .vybrany-rocnik .foto.mbtrick > div {
+    margin-top: 0;
+  }
+
+  .vybrany-rocnik h1, .vybrany-rocnik h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  main.another-page .bcgwhite, main.another-page .bcgblack {
+    display: none;
+  }
+
+  main.another-page h1 {
+    background: #fff;
+    color: black;
+    font-size: 34px;
+    line-height: 34px;
+    padding: 0 15px;
+  }
+
+  main.another-page .container {
+    padding-bottom: 0;
+  }
+
+  .rocniky li {
+    margin: 0 10px;
+  }
+
+  .rocniky li a {
+    font-size: 24px;
+  }
+
+  main #hero-vid p.dsc {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  main #hero-vid p.dsc span {
+    font-size: 16px;
+  }
+
+  main #hero-vid .odpocet-text {
+    padding: 0 10px 10px 10px;
+  }
+
+  .timecount {
+    width: 190px;
+  }
+
+  .gallery__currentYear,
+  .gallery__previousYearsItem {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .partners .flx-loga a {
+    /*margin: 0;*/
+    /*margin-top: 20px;*/
+    /*width: 50%;*/
+    /*padding: 0 15px;*/
+  }
+
+  .partners .flx-loga a.big {
+    width: 100%;
+  }
+
+  main.fail-page .content-404 h1 {
+    font-size: 120px;
+    line-height: 95px;
+    margin-bottom: 30px;
+  }
+
+  main.fail-page .content-404 p {
+    margin-bottom: 30px;
+  }
+
+  main.fail-page {
+    padding-bottom: 30px;
+  }
+
+  main #hero-girl {
+    background-position-x: 35%;
+  }
+
+  footer p {
+    font-size: 13px;
+  }
+
+  footer p a {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .cc_container {
+    height: 50px !important;
+    width: 300px !important;
+    margin-left: -150px !important;
+  }
+
+  .cc_container .cc_message {
+    line-height: 28px !important;
+  }
+
+  .cc_container .cc_btn {
+    font-size: 12px !important;
+    padding: 0 10px !important;
+    height: 30px !important;
+    line-height: 28px !important;
+  }
+
+  .cc_container a, .cc_container a:visited {
+    font-size: 12px !important;
+    line-height: 28px !important;
+  }
+
+  #container.fluid .item {
+    width: 100%;
+  }
+
+  main #hero-vid {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 360px) {
+
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+  main:not(.another-page) .container:before {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1099px) {
+  main:not(.another-page) .container:before {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1023px) {
+  main:not(.another-page) .container:before {
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 50%;
+    right: unset;
+    transform: translate(-50%, 0);
+  }
+
+  main #hero-vid {
+    padding: 200px 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  main .container {
+    padding-top: 110px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainClaim__headline {
+    font-size: 84px;
+  }
+
+  .mainClaim__headline span {
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  main .container {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+}
