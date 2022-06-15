@@ -125,10 +125,12 @@ because they adjust depending on the device that you are on,
 e.g. 1px on my PC will be 4px on a high resolution TV, but there is a catch, until 
 the width reaches 1000px they don't adjust, the screen just gets narrower and they don't adjust. 
 Then there are absolute units like: mm, cm, in, which don't change and relative units 
-like: %, rem, em, vw, vh. % stands for a percentage of the width/height of the parent tag, rem stands 
+like: %, rem, em, vw, vh. rem stands 
 for how many times we want to amplify the normal size, that the text would have on the page, 
 em stands for how many times we want to amplify the normal size, that the text would have 
-inside of the container, that it's in and vw and vh stand for a percentage of the screen dimensions. */
+inside of the container, that it's in, % stands for a percentage of the width / height of the 
+parent tag - including the side bar and vw and vh stand for a percentage of the screen 
+dimensions - including the side bar. */
 
 /* It's important to set the height and more importantly the width, so that the it fits on every device. 
 We use px for height and relative units like vw or % for width. 
