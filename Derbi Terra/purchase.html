@@ -14,112 +14,106 @@
             <h1>Derbi Terra</h1>
             <a class="purchase" href="purchase.html">Koupit</a>
         </nav>
-        <main>
-            <div id="buy">
-                <div id="form">
+        <main id="buy">
+            <section id="form">
+                <h2 id="buy-h2">Koupit</h2>
+                <form action="confirmation.html" method="POST">
                     <section>
-                        <h2 id="buy-h2">Koupit</h2>
-                        <form action="confirmation.html" method="POST">
-                            <section>
-                                <label for="first-name">Jméno:</label>
-                                <input type="text" name="first-name" id="first-name" required style="margin-left: 1.4cm;">
-                            </section>
-                            <br>
-                            <br>
-                            <section>
-                                <label for="last-name">Příjmení:</label>
-                                <input type="text" name="last-name" id="last-name" required style="margin-left: 1.1cm;">
-                            </section>
-                            <br>
-                            <br>
-                            <section>
-                                <label for="tel">Telefon:</label>
-                                <input type="tel" name="tel" id="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="### ### ###" required style="margin-left: 1.28cm;">
-                            </section>
-                            <br>
-                            <br>
-                            <section>
-                                <label for="e-mail">E-mail:</label>
-                                <input type="email" name="e-mail" id="e-mail" required style="margin-left: 1.45cm;">
-                            </section>
-                            <br>
-                            <br>
-                            <section>
-                                <label for="city">Město:</label>
-                                <input type="text" list="cities" name="city" id="city" required style="margin-left: 1.45cm;">
-                                <datalist id="cities">
-                                    <option value="Praha"></option>
-                                    <option value="Brno"></option>
-                                    <option value="Ostrava"></option>
-                                    <option value="Olomouc"></option>
-                                    <option value="České Budějovice"></option>
-                                    <option value="Plzeň"></option>
-                                    <option value="Karlovy Vary"></option>
-                                    <option value="Hradec Králové"></option>
-                                    <option value="Liberec"></option>
-                                    <option value="Pardubice"></option>
-                                    <option value="Jihlava"></option>
-                                    <option value="Ústí nad Labem"></option>
-                                    <option value="Zlín"></option>
-                                </datalist>
-                            </section>
-                            <br>
-                            <br>
-                            <section>
-                                <label for="postal-code">PSČ:</label>
-                                <input type="text" name="postal-code" id="postal-code" pattern="[0-9]{3} [0-9]{2}" placeholder="### ##" required style="margin-left: 1.9cm;">
-                            </section>
-                            <br>
-                            <br>
-                            <section>
-                                <label for="address">Adresa:</label>
-                                <input type="text" name="address" id="address" required style="margin-left: 1.34cm;">
-                            </section>
-                            <br>
-                            <br>
-                            <section>
-                                <span>Barva:</span>
-                                <label for="red" style="margin-left: 1.6cm;">Červená</label>
-                                <input type="radio" name="color" id="red" value="red" checked>
-                                <label for="black">Černá</label>
-                                <input type="radio" name="color" id="black" value="black">
-                            </section>
-                            <br>
-                            <br>
-                            <section>
-                                <label for="more-info">Doplňující informace:</label>
-                                <br>
-                                <br>
-                                <textarea name="more-info" id="more-info" cols="37" rows="5"></textarea>
-                            </section>
-                            <br>
-                            <br>
-                            <section>
-                                <input type="submit" value="Koupit">
-                            </section>
-                        </form>
+                        <label for="first-name">Jméno:</label>
+                        <input type="text" name="first-name" id="first-name" required style="margin-left: 1.4cm;">
                     </section>
-                </div>
-                <div id="imgs">
+                    <br>
+                    <br>
                     <section>
-                        <figure>
-                            <img id="red-img" src="red-motorcycle.jpg" alt="červená motorka"/>
-                            <figcaption>Červená Derbi Terra</figcaption>
-                        </figure>
+                        <label for="last-name">Příjmení:</label>
+                        <input type="text" name="last-name" id="last-name" required style="margin-left: 1.1cm;">
+                    </section>
+                    <br>
+                    <br>
+                    <section>
+                        <label for="tel">Telefon:</label>
+                        <input type="tel" name="tel" id="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="### ### ###" required style="margin-left: 1.28cm;">
+                    </section>
+                    <br>
+                    <br>
+                    <section>
+                        <label for="e-mail">E-mail:</label>
+                        <input type="email" name="e-mail" id="e-mail" required style="margin-left: 1.45cm;">
+                    </section>
+                    <br>
+                    <br>
+                    <section>
+                        <label for="city">Město:</label>
+                        <input type="text" list="cities" name="city" id="city" required style="margin-left: 1.45cm;">
+                        <datalist id="cities">
+                            <option value="Praha"></option>
+                            <option value="Brno"></option>
+                            <option value="Ostrava"></option>
+                            <option value="Olomouc"></option>
+                            <option value="České Budějovice"></option>
+                            <option value="Plzeň"></option>
+                            <option value="Karlovy Vary"></option>
+                            <option value="Hradec Králové"></option>
+                            <option value="Liberec"></option>
+                            <option value="Pardubice"></option>
+                            <option value="Jihlava"></option>
+                            <option value="Ústí nad Labem"></option>
+                            <option value="Zlín"></option>
+                        </datalist>
+                    </section>
+                    <br>
+                    <br>
+                    <section>
+                        <label for="postal-code">PSČ:</label>
+                        <input type="text" name="postal-code" id="postal-code" pattern="[0-9]{3} [0-9]{2}" placeholder="### ##" required style="margin-left: 1.9cm;">
+                    </section>
+                    <br>
+                    <br>
+                    <section>
+                        <label for="address">Adresa:</label>
+                        <input type="text" name="address" id="address" required style="margin-left: 1.34cm;">
+                    </section>
+                    <br>
+                    <br>
+                    <section>
+                        <span>Barva:</span>
+                        <label for="red" style="margin-left: 1.6cm;">Červená</label>
+                        <input type="radio" name="color" id="red" value="red" checked>
+                        <label for="black">Černá</label>
+                        <input type="radio" name="color" id="black" value="black">
+                    </section>
+                    <br>
+                    <br>
+                    <section>
+                        <label for="more-info">Doplňující informace:</label>
                         <br>
-                        <figure>
-                            <img id="black-img" src="black-motorcycle.jpg" alt="černá motorka"/>
-                            <figcaption>Černá Derbi Terra</figcaption>
-                        </figure>
+                        <br>
+                        <textarea name="more-info" id="more-info" cols="37" rows="5"></textarea>
                     </section>
-                </div>
-            </div>
+                    <br>
+                    <br>
+                    <section>
+                        <input type="submit" value="Koupit">
+                    </section>
+                </form>
+            </section>
+            <section>
+                <figure>
+                    <img class="form-imgs" src="red-motorcycle.jpg" alt="červená motorka"/>
+                    <figcaption style="margin-left: 50px;">Červená Derbi Terra</figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <img class="form-imgs" src="black-motorcycle.jpg" alt="černá motorka"/>
+                    <figcaption style="margin-left: 50px;">Černá Derbi Terra</figcaption>
+                </figure>
+            </section>
         </main>
         <br>
         <footer>
-            <span id="name">Marek Hostášek</span>
-            <span id="e-mail">E-mail: marekhostasek@gmail.com</span>
-            <span id="tel">Tel.: 731 322 443</span>
+            <span class="name">Marek Hostášek</span>
+            <span class="e-mail">E-mail: marekhostasek@gmail.com</span>
+            <span class="tel">Tel.: 731 322 443</span>
         </footer>
     </body>
 </html>
